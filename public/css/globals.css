@@ -51,6 +51,11 @@ a {
   padding-left: 200px;
 }
 
+#portfolio {
+  background-color: #55596C;
+}
+
+
 .whatwedo > span {
   font-family: var(--font-montserrat);
   font-weight: 900;

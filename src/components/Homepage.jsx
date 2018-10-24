@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SVG from "react-inlinesvg";
 import { findDOMNode } from "react-dom";
 import { debounce } from "lodash";
-
+import Portfolio from "./Portfolio"
 import LogoHeader from "./LogoHeader";
 import HomepageBanner from "./HomepageBanner";
 import ServicePanel from "./ServicePanel";
@@ -43,6 +43,7 @@ class Homepage extends Component {
         <LogoHeader navBarFixed={this.state.navBarFixed} />
         <HomepageBanner fixNavBar={this.handleScroll} />
         <ServicePanelsSlider borderColor="var(--blue)" />
+        <Portfolio />
         <LetsTalk />
         <Footer />
       </div>
