@@ -12,7 +12,7 @@ module.exports = {
       },
     'devServer': {
         'publicPath': '/javascripts',
-        'https':false,
+        'https':true,
         host: '0.0.0.0',
         port:8080,
         headers: {
@@ -23,7 +23,6 @@ module.exports = {
         aggregateTimeout: 300,
         poll:1000
     },
-    'mode': 'development',
     'entry': {
         'main': [__dirname + '/src/App.jsx'],
     },

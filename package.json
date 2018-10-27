@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "wb": "webpack-dev-server --config webpack.config.js --open --hot"
+    "wb": "webpack-dev-server --config webpack.config.js --open --hot --mode development",
+    "prod": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
