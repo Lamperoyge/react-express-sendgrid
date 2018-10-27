@@ -5,7 +5,7 @@ var path = require('path');
 module.exports = {
     'output': {
         'filename': 'main.js',
-        'path': path.join(__dirname, 'public/javascripts'),
+        'path': path.join(__dirname, 'public'),
     },
     'resolve': {
         'extensions': [".js", ".jsx", ".json", "scss"]

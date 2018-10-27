@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "dev": "nodemon ./bin/www",
     "wb": "webpack-dev-server --config webpack.config.js --open --hot --mode development",
-    "prod": "webpack --config webpack.config.js"
+    "heroku-postbuild": "webpack -p --config webpack.config.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",

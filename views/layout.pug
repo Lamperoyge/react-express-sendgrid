@@ -9,4 +9,5 @@ html
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
   body
     block content
-    script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "http://127.0.0.1:8080/javascripts") + '/main.js')
+    //- script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "http://127.0.0.1:8080/javascripts") + '/main.js')
+    script(src=(process.env.NODE_ENV === "locale" ?"https://127.0.0.1:8080":"" ) + '/main.js')
