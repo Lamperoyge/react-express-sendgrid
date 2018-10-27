@@ -193,8 +193,16 @@ class ContactForm extends Component {
     fetch(`/send/contact/${body}`, {
       method: 'POST',
       body: body
-    }).then(res => res.json())
-    .then(function(data) {console.log(data)})
+    })
+    .then(() =>
+      this.setState({
+        name: "",
+        email: "",
+        subject: "landing page",
+        messageContent: "",
+        formSent: true
+      })
+    )
     .catch(err => console.log(data, err));
   
     // fetch("/contact", {
@@ -228,8 +236,8 @@ class ContactForm extends Component {
 
   render() {
     const options = [
-      "webdesign",
-      "e-commerce",
+      "landing page",
+      "web design",
       "logo design",
       "branding",
       "just talk",

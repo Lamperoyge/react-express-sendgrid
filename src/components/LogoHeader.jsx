@@ -28,16 +28,21 @@ const Wrapper = styled.div`
 `;
 
 const Gradient = styled.span`
-  font-family: var(--font-montserrat);
-  font-weight: 600;
+  // font-family: var(--font-montserrat);
+  font-weight: lighter;
   font-size: 1.5rem;
   color: var(--blue);
-  background: -webkit-linear-gradient(0deg, var(--pink), var(--blue));
+  font-family: 'Quicksand', sans-serif;
+  color: #FEA700;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-left: 30px;
+  position: absolute;
+  left: 10%;
+  top: 55%;
   @media (max-width: 1000px) {
     font-size: 1rem;
+    left: 11%;
+    top: 70%;
   }
 `;
 
@@ -70,8 +75,8 @@ class LogoHeader extends Component {
           }}
         >
           <Align>
-            <LogoSVG src="/img/2.svg" alt="3GiR Logo" />
-            <Gradient>— affordable web services.</Gradient>
+            <LogoSVG src="/img/2.svg" alt=" Logo" />
+            <Gradient>— affordable <span style = {{color: '#5AE1FF'}}>web</span> services.</Gradient>
           </Align>
         </Wrapper>
       </Logo>
