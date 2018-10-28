@@ -53,7 +53,7 @@ module.exports = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            '3gir': {
+            'pixmes': {
                 'static': {
                     'host': JSON.stringify(process.env.NODE_ENV === "development" ? 'http://127.0.0.1:8080' : 'http://127.0.0.1'),
                 }
