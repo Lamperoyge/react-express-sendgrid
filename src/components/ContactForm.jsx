@@ -10,10 +10,22 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 3px;
+  @media (max-width: 768px) {
+    background: url('/img/contact.svg');
+    background-size: cover;
+    background-position: center;
+  }
   box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.08), 0 0 12px 2px rgba(0, 0, 0, 0.12);
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+@media (max-width: 768px) {
+  border-radius: 3px;
+  background-color: var(--lightDarkBlue);
+  padding: 45px 29px;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.08), 0 0 12px 2px rgba(0, 0, 0, 0.12);
+}
+`;
 
 const InputGroup = styled.div`
   width: 100%;
@@ -36,7 +48,7 @@ const TextInput = styled.input`
   caret-color: var(--pink);
   flex-grow: 1;
   margin: 0 auto;
-  width: calc(100% - 20px); //offsetting padding-left;
+  width: calc(100% - 20px); 
   appearance: none;
   border: 1px solid var(--lightGrey);
   padding: 6px 0;

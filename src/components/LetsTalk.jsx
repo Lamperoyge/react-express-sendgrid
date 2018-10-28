@@ -33,12 +33,15 @@ const Illustration = styled.img`
   left: 20px;
   height: 100%;
   overflow-x: hidden;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const LetsTalk = () => (
   <Container id="contact">
     <Title>contact</Title>
-    <Illustration src="/img/contact.svg" />
+    <Illustration src="/img/contact.svg" /> 
     <ContactForm />
   </Container>
 );

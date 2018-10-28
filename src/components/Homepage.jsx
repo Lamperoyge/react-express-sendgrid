@@ -18,9 +18,6 @@ const PageDecor = styled.div`
   height: calc(100vh - 74px);
   max-height: calc(100vh - 74px);
   z-index: 0;
-  // @media (max-width: 800px) {
-  //   display: none;
-  // }
 `;
 
 class Homepage extends Component {
