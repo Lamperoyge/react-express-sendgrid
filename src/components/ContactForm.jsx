@@ -188,7 +188,7 @@ class ContactForm extends Component {
     submitEvent.preventDefault();
     const form = document.getElementById("contact-form");
     const { name, email, subject, messageContent } = this.state;
-    const body = JSON.stringify({ name, email, subject, messageContent });
+    const body = JSON.stringify({ name, email, subject, messageContent,phone });
     // form.reset();
 
     fetch(`/send/contact/${body}`, {
