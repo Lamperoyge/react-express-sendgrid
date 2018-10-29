@@ -150,6 +150,8 @@ class HomepageBanner extends Component {
         }}
         id="home"
       >
+
+      
         <Lettering>
           <Header>
             <span>We</span>
@@ -158,13 +160,13 @@ class HomepageBanner extends Component {
           </Header>
           <Subheader scrollTop={this.props.scrollTop}>And then more.</Subheader>
           <Content>
-            Romania based web studio that combines <span>good design</span> with{" "}
-            <span>clean code </span>
-            and <span> excellent prices</span>.
+          Unica agenție din Rep. Moldova care oferă servicii de <span>hostess</span>
+           
+            
           </Content>
         </Lettering>
         <Contact onClick={() => scrollToElement("#contact", scrollOptions)}>
-          let's talk!
+          Scrie-ne!
         </Contact>
         <PageDecor>
           <SVG src={"/img/thingie.svg"} />

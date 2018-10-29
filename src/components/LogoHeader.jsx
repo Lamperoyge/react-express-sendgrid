@@ -71,7 +71,7 @@ class LogoHeader extends Component {
         >
           <Align>
             <LogoSVG src="/img/2.svg" alt="3GiR Logo" />
-            <Gradient>— affordable web services.</Gradient>
+            <Gradient>—  hostess agency</Gradient>
           </Align>
         </Wrapper>
       </Logo>

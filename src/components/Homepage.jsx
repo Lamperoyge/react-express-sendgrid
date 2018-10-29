@@ -43,7 +43,7 @@ class Homepage extends Component {
         <LogoHeader navBarFixed={this.state.navBarFixed} />
         <HomepageBanner fixNavBar={this.handleScroll} />
         <ServicePanelsSlider borderColor="var(--blue)" />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <LetsTalk />
         <Footer />
       </div>

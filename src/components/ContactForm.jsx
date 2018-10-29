@@ -156,9 +156,10 @@ const Send = styled.input`
 
 class ContactForm extends Component {
   state = {
+    phone: "",
     name: "",
     email: "",
-    subject: "webdesign",
+    subject: "Expozitii",
     messageContent: "",
     formSent: false
   };
@@ -196,27 +197,6 @@ class ContactForm extends Component {
     }).then(res => res.json())
     .then(function(data) {console.log(data)})
     .catch(err => console.log(data, err));
-  
-    // fetch("/contact", {
-    //   method: "ALL",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json"
-    //   },
-    //   body
-    // })
-    //   .then(() =>
-    //     this.setState({
-    //       name: "",
-    //       email: "",
-    //       subject: "webdesign",
-    //       messageContent: "",
-    //       formSent: true
-    //     })
-    //   )
-    //   .catch(error => {
-    //     console.error(error);
-    //   });
   };
   renderOptions = options => {
     return options.map(option => (
@@ -228,12 +208,14 @@ class ContactForm extends Component {
 
   render() {
     const options = [
-      "webdesign",
-      "e-commerce",
-      "logo design",
-      "branding",
-      "just talk",
-      "others"
+      "Inaugurari",
+      "Activitati de promovare",
+      "Evenimente mondene",
+      "Lansari de produse",
+      "Conferinte",
+      "Expozitii",
+      "Nunti",
+      "Alte evenimente"
     ]; // change here to add more options or edit the subject selector
     return (
       <Wrapper>
@@ -243,7 +225,7 @@ class ContactForm extends Component {
               type="text"
               id="name"
               name="name"
-              placeholder="tell us your name"
+              placeholder="Nume"
               value={this.state.name}
               onChange={this.handleNameChange}
               required
@@ -253,14 +235,24 @@ class ContactForm extends Component {
             <TextInput
               type="email"
               name="email"
-              placeholder="...and your email address"
+              placeholder="E-mail"
+              value={this.state.email}
+              onChange={this.handleEmailChange}
+              required
+            />
+          </InputGroup>
+          <InputGroup>
+            <TextInput
+              type="number"
+              name="phone"
+              placeholder="Telefon: "
               value={this.state.email}
               onChange={this.handleEmailChange}
               required
             />
           </InputGroup>
           <InputGroup className="select">
-            <Label htmlFor="subject">pick a subject:</Label>
+            <Label htmlFor="subject">Evenimentul</Label>
             <Select
               id="subject"
               value={this.state.value}
@@ -275,7 +267,7 @@ class ContactForm extends Component {
               id="message"
               cols="20"
               rows="5"
-              placeholder="and write us something! We’ll get back to you very soon ;)"
+              placeholder="Mesajul Dvs."
               value={this.state.messageContent}
               onChange={this.handleMessageChange}
               required
@@ -284,7 +276,7 @@ class ContactForm extends Component {
           </InputGroup>
           <Send
             type="submit"
-            value={this.state.formSent ? "message sent!" : "Submit"}
+            value={this.state.formSent ? "Trimis! " : "Trimite"}
             sent={this.state.formSent}
           />
         </Form>
