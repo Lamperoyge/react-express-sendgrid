@@ -210,7 +210,7 @@ class ContactForm extends Component {
       this.setState({
         name: "",
         email: "",
-        subject: "landing page",
+        subject: "web services",
         messageContent: "",
         formSent: true
       })
@@ -240,7 +240,7 @@ class ContactForm extends Component {
   };
   renderOptions = options => {
     return options.map(option => (
-      <option key={option} value={option}>
+      <option key={option} value={option} style={{color: "#3A3A3B"}}>
         {option}
       </option>
     ));
@@ -248,10 +248,9 @@ class ContactForm extends Component {
 
   render() {
     const options = [
-      "landing page",
-      "web design",
-      "logo design",
-      "branding",
+      "web services",
+      "design",
+      "marketing",
       "just talk",
       "others"
     ]; // change here to add more options or edit the subject selector
@@ -295,7 +294,7 @@ class ContactForm extends Component {
               id="message"
               cols="20"
               rows="5"
-              placeholder="and write us something! We’ll get back to you very soon ;)"
+              placeholder="and write us about your project! We’ll get back to you very soon ;)"
               value={this.state.messageContent}
               onChange={this.handleMessageChange}
               required

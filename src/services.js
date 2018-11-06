@@ -1,25 +1,25 @@
 const services = [
   {
-    title: "webdesign",
+    title: "web studio",
     headline: "pixel perfect",
     description:
-      "As a design-centric studio, we develop responsive websites, that are pleasing to the eye in any device. ",
+      "As a design-centric studio, we develop responsive websites, that are pleasing to the eye in any device. From landing pages to fully fledged web applications.",
     img: "webdesign.svg",
     color: "var(--blue)"
   },
   {
-    title: "static websites",
-    headline: "target reaching",
+    title: "reach more",
+    headline: "SEO",
     description:
-      "Fast, modern, responsive websites. From landing pages to fully fledged web applications.",
+      "We'll kick off with an audit and then fight hard to get you to the top of the rank.",
     img: "ecommerce.svg",
     color: "var(--pink)"
   },
   {
-    title: "branding identity",
-    headline: "unique",
+    title: "Influencer marketing",
+    headline: "brand identity",
     description:
-    "Just like your personal identity makes you uniquely you, your brand identity is the special sauce of your business that sets you apart from every other Tom, Dick and Harry, Inc. on the block.",
+    "Our team will make even the most banner-blinded audience stop scrolling, start engaging, and convert. Just like your personal identity makes you uniquely you, we will make you and your business stand out.",
     img: "ecommerce.svg",
     color: "var(--yellow)"
   }

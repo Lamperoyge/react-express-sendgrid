@@ -156,9 +156,9 @@ class HomepageBanner extends Component {
             <span>make</span>
             <span>Websites</span>
           </Header>
-          <Subheader scrollTop={this.props.scrollTop}>And then more.</Subheader>
+          <Subheader scrollTop={this.props.scrollTop}>And then we'll get you viral.</Subheader>
           <Content>
-            Romania based web studio that combines <span>good design</span> with{" "}
+            Europe based web studio that combines <span>good design</span> with{" "}
             <span>clean code </span>
             and <span> excellent prices</span>.
           </Content>

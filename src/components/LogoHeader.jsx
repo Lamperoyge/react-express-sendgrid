@@ -75,8 +75,8 @@ class LogoHeader extends Component {
           }}
         >
           <Align>
-            <LogoSVG src="/img/2.svg" alt=" Logo" />
-            <Gradient>— affordable <span style = {{color: '#5AE1FF'}}>web</span> services.</Gradient>
+            <LogoSVG src="/img/logoViral.png" alt=" Logo" />
+            {/* <Gradient>::we will make you <span>viral</span></Gradient> */}
           </Align>
         </Wrapper>
       </Logo>
