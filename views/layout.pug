@@ -9,7 +9,7 @@ html
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:100,200,400,500,600,700,800,900"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,700i,900" rel="stylesheet">
-    <title>pixmes - affordable web services</title>
+    <title>viral pixel - affordable web services</title>
     link(rel='stylesheet', href='/css/globals.css')
     link(rel='stylesheet', href='/css/normalize.css')
     link(rel='stylesheet', href='/css/rectangles.css')
@@ -17,5 +17,5 @@ html
     
   body
     block content
-    script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "https://127.0.0.1:8080/javascripts") + '/main.js')
-    //- script(src=(process.env.NODE_ENV === "locale" ?"https://127.0.0.1:8080":"" ) + '/main.js')
+    //- script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "https://127.0.0.1:8080/javascripts") + '/main.js')
+    script(src=(process.env.NODE_ENV === "locale" ?"https://127.0.0.1:8080":"" ) + '/main.js')
