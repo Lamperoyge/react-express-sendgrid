@@ -43,6 +43,21 @@ const WhatWeDo = styled.h2`
     margin-left: 20px;
     font-size: 3rem;
   }
+
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    margin-top: 3rem;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    margin-top: 3rem;
+}
 `;
 
 class ServicePanelsSlider extends Component {
