@@ -49,7 +49,7 @@ const Gradient = styled.span`
 const LogoSVG = styled.img`
   height: 72px;
   position: relative;
-  top: -3vh;
+  top: -1.5vh;
   @media (max-width: 800px) {
     padding-left: 0px;
     height: 63px;

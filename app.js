@@ -6,7 +6,7 @@ var logger = require('morgan');
 var bodyParser = require("body-parser");
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var favicon = require('serve-favicon')
 var app = express();
 
 // view engine setup
@@ -29,7 +29,7 @@ app.use('/users', usersRouter);
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
+app.use(favicon(path.join(__dirname, 'public/img', 'favicon.png')))
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
