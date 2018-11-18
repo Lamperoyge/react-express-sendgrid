@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Logo = styled(Link)`
   position: fixed;
-  height: 74px;
+  height: 93px;
   transition: all 0.3s ease-out;
   background-color: var(--darkBlue);
   &.fixed {
@@ -47,10 +47,15 @@ const Gradient = styled.span`
 `;
 
 const LogoSVG = styled.img`
-  height: 34px;
+  height: 72px;
+  position: relative;
+  top: -3vh;
   @media (max-width: 800px) {
     padding-left: 0px;
-    height: 22px;
+    height: 63px;
+    position: relative;
+    left: -2vh;
+    top: 0vh;
   }
 `;
 
@@ -75,7 +80,7 @@ class LogoHeader extends Component {
           }}
         >
           <Align>
-            <LogoSVG src="/img/logoViral.png" alt=" Logo" />
+            <LogoSVG src="/img/logoAnother.png" alt=" Logo" />
             {/* <Gradient>::we will make you <span>viral</span></Gradient> */}
           </Align>
         </Wrapper>

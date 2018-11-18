@@ -46,10 +46,12 @@ const Footerz = styled.div`
     border-radius: 35px;
     background-color: var(--pink);
     font-weight: 400;
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       font-size: 1rem;
       font-weight: 500;
       padding: 10px 9px;
+      position: relative;
+      top: 1.5vh;
     }
   }
 `;

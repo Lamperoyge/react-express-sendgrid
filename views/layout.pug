@@ -17,5 +17,5 @@ html
     
   body
     block content
-    //- script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "https://127.0.0.1:8080/javascripts") + '/main.js')
-    script(src=(process.env.NODE_ENV === "locale" ?"https://127.0.0.1:8080":"" ) + '/main.js')
+    script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "https://127.0.0.1:8080/javascripts") + '/main.js')
+    //- script(src=(process.env.NODE_ENV === "locale" ?"https://127.0.0.1:8080":"" ) + '/main.js')
